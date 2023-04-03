@@ -1,0 +1,33 @@
+﻿
+    .body {
+   
+    text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-image: url("Sloneczniki.png") ;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
+    background-position: center;
+      
+    }
+
+    a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    a:visited {
+    color: deepskyblue;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    a:active {
+    color: yellow;
+    background-color: transparent;
+    }
+
+    .images {
+    max-width: 100%;
+    height: auto;
+    }
