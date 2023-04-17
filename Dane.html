@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <title>Biomasa i biogaz</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <p>Kliknij tutaj, aby wygenerować wykres dotyczący zapotrzebowania na BioGaz w latach 2015-2022</p>
+    <canvas id="myChart"></canvas>
+    <script>
+      function generateChart() {
+        var randomNumbers = [];
+        for (var i = 0; i < 10; i++) {
+          randomNumbers.push(Math.floor(Math.random() * 100000)); 
+        }
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+            datasets: [{
+              label: 'Zapotrzebowanie na BioGaz w poszczególnych latach [t]',
+              data: randomNumbers,
+			  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+              borderColor: 'rgba(255, 99, 132, 1)',
+              borderWidth: 1
+            }]
+          },
+         options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true,
+                  fontColor: 'white'
+                }
+              }]
+            },
+            legend: {
+              labels: {
+                fontColor: 'white'
+              }
+            }
+          }
+        });
+      }
+      var button = document.getElementsByTagName('p')[0];
+      button.onclick = generateChart;
+    </script>
+</body>
+</html>

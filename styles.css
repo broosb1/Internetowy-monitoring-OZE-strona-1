@@ -1,6 +1,5 @@
-﻿
-    .body {
-   
+﻿.body {
+
     text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
     color: white;
     font-family: Arial, sans-serif;
@@ -9,7 +8,7 @@
     background-size: 1920px 1080px;
     background-attachment: fixed;
     background-position: center;
-      
+
     }
 
     a:link {
@@ -30,4 +29,11 @@
     .images {
     max-width: 100%;
     height: auto;
+
+	.pogoda {
+		position: absolute;
     }
+	.myChart
+		.axis-label-x {
+        color: white;
+      }
